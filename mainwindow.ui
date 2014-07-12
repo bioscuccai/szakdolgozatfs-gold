@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>672</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SzakdolgozatFs Commander</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="balCimsor">
+        <item>
+         <widget class="QLabel" name="leftPathLabel">
+          <property name="text">
+           <string>&lt;b&gt;sdsdsadsad&lt;/b&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="frissitBalButton">
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>F</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="leftUpButton">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>^</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="jobbCimsor">
+        <item>
+         <widget class="QPushButton" name="rightUpButton">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>^</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="frissitJobbButton">
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>F</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="rightPathLabel">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTableView" name="leftTable">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="rightTable">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="gombSor">
+      <item>
+       <widget class="QPushButton" name="infoButton">
+        <property name="text">
+         <string>Infó</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="szerkeztButton">
+        <property name="text">
+         <string>Szerkeszt</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="masolButton">
+        <property name="text">
+         <string>Másol</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="athelyezButton">
+        <property name="text">
+         <string>Áthelyez</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="atnevezButton">
+        <property name="text">
+         <string>Átnevez</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="torolButton">
+        <property name="text">
+         <string>Töröl</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="importButton">
+        <property name="text">
+         <string>Import</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exportButton">
+        <property name="text">
+         <string>Export</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ujKonyvtarButton">
+        <property name="text">
+         <string>Új könyvtár</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ujFileButton">
+        <property name="text">
+         <string>Új File</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1030</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuF_jl">
+    <property name="title">
+     <string>Fájl</string>
+    </property>
+    <addaction name="actionUjImage"/>
+    <addaction name="actionImageMegnyit"/>
+    <addaction name="actionImageMasolat"/>
+    <addaction name="separator"/>
+    <addaction name="actionKilep"/>
+   </widget>
+   <widget class="QMenu" name="menuN_zet">
+    <property name="title">
+     <string>Nézet</string>
+    </property>
+    <addaction name="actionLemezMuvelet"/>
+    <addaction name="actionHelyfoglalas"/>
+    <addaction name="actionDiagram"/>
+    <addaction name="actionCache"/>
+    <addaction name="actionKonzisztencia"/>
+   </widget>
+   <widget class="QMenu" name="menuBe_ll_t_sok">
+    <property name="title">
+     <string>Beállítások</string>
+    </property>
+    <addaction name="actionFilerendszer"/>
+    <addaction name="actionUnitTest"/>
+    <addaction name="actionToredezettseg"/>
+    <addaction name="actionBlokkMuvelet"/>
+   </widget>
+   <addaction name="menuF_jl"/>
+   <addaction name="menuN_zet"/>
+   <addaction name="menuBe_ll_t_sok"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionImageMegnyit">
+   <property name="text">
+    <string>Image megnyitása</string>
+   </property>
+  </action>
+  <action name="actionKilep">
+   <property name="text">
+    <string>Kilépés</string>
+   </property>
+  </action>
+  <action name="actionImageMasolat">
+   <property name="text">
+    <string>Image másolat mentése</string>
+   </property>
+  </action>
+  <action name="actionLemezMuvelet">
+   <property name="text">
+    <string>Lemez műveletek</string>
+   </property>
+  </action>
+  <action name="actionHelyfoglalas">
+   <property name="text">
+    <string>Helyfoglalás</string>
+   </property>
+  </action>
+  <action name="actionNaploAllapot">
+   <property name="text">
+    <string>Napló állapot</string>
+   </property>
+  </action>
+  <action name="actionFilerendszer">
+   <property name="text">
+    <string>Filerendszer</string>
+   </property>
+  </action>
+  <action name="actionUnitTest">
+   <property name="text">
+    <string>Unit Test</string>
+   </property>
+  </action>
+  <action name="actionUjImage">
+   <property name="text">
+    <string>Új Image</string>
+   </property>
+  </action>
+  <action name="actionDiagram">
+   <property name="text">
+    <string>Diagram</string>
+   </property>
+  </action>
+  <action name="actionCache">
+   <property name="text">
+    <string>Cache</string>
+   </property>
+  </action>
+  <action name="actionKonzisztencia">
+   <property name="text">
+    <string>Konzisztencia</string>
+   </property>
+  </action>
+  <action name="actionToredezettseg">
+   <property name="text">
+    <string>Töredezettségmentesítés</string>
+   </property>
+  </action>
+  <action name="actionBlokkMuvelet">
+   <property name="text">
+    <string>Blokk műveletek</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
